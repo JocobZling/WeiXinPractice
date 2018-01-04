@@ -1,0 +1,52 @@
+Page {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.page-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    padding: 20rpx 40rpx;
+    border-bottom: 2rpx solid #eee;
+}
+
+.item .poster {
+    width: 130rpx;
+    height: 180rpx;
+    margin-right: 20rpx;
+}
+
+.item .meta {
+    flex: 1;
+}
+
+.item .title, .item .sub-title {
+    display: block;
+    margin-bottom: 14rpx;
+}
+
+.item .title {
+    font-size: 32rpx;
+}
+
+.item .sub-title {
+    font-size: 22rpx;
+    color: #c0c0c0;
+}
+
+.item .artists {
+    font-size: 26rpx;
+    color: #999999;
+}
+
+.item .rate {
+    font-size: 28rpx;
+    font-weight: bold;
+    color: orangered;
+}
+

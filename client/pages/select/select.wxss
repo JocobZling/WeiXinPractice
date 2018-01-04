@@ -1,0 +1,14 @@
+.step{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+.item{
+    margin: 5px;
+}
+.picture{
+    width: 150px;
+    height: 150px;
+}

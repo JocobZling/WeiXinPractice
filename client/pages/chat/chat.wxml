@@ -1,0 +1,27 @@
+
+<view class="page-header">
+    <text class="page-header-text">聊天机器人</text>
+</view>
+<scroll-view scroll-y="true" style="height:500px" scroll-top="{{scrollTop}}">
+    <view class="reply">
+        <image class="photo" src="/images/robot.jpg"></image>
+        <text class="text">小可爱你好，该功能只能在微信开发者工具中使用哈！</text>
+    </view>
+    <block wx:for="{{msgList}}" wx:key="msgList">
+        <view class="send" wx:if="{{item.type==0}}">
+            <text class="text">{{item.msg}}</text>
+            <image class="photo" src="/images/Me.jpg"></image>
+        </view>
+        <view class="reply" wx:if="{{item.type==1}}">
+            <image class="photo" src="/images/robot.jpg"></image>
+            <text class="text">{{item.msg}}</text>
+        </view>
+    </block>
+</scroll-view>
+
+<form bindsubmit="send">
+    <view class="sendMsg">
+        <textarea name="msg" class="inputMsg"/>
+        <button form-type="submit" class="sendBtn">send</button>
+    </view>
+</form>
